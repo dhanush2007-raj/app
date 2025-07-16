@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Admission From</title>
+        <style>
+            body{
+                background-color: #ccc;
+            }
+            .container{
+                width: 500px;
+                height: auto;
+                margin: auto;
+                padding: 25px;
+                box-shadow: 15px 6px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 8px;
+                background-color: white;
+            }
+            h2{
+                font-family: Arial Black;
+                text-align: center;
+                color: #333;
+            }
+            label{
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            input, select, textarea{
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            input[type="Submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                margin-top: 20px;
+                cursor: cell;
+                height: 40PX;
+            }
+            input[type="submit"]:hover{
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>STUDENT ADMISSION FORM</h2>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+                
+                <label for="dob">Date of birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">--SELECT--</option>
+                    <option value="male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="LGBTQIA+">LGBTQIA+</option>
+                </select>
+
+                <label for="course">Course Applied:</label>
+                <select id="course" name="course" required>
+                    <option value="">--SELECT COURSE--</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                </select>
+
+                <label for="phone">Mobile number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]-{10}" placeholder="10-digit number" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Permanent Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <input type="Submit" value="submit Application">
+        </div>
+    </body>
+</html>
